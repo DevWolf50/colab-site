@@ -1,0 +1,118 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: #3498db;
+  color: white;
+  width: 100%; }
+  header h1 {
+    background: #2ecc71;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px 5px;
+    padding: 10px; }
+  header ul {
+    display: inline-block;
+    text-align: right; }
+    header ul li {
+      float: left;
+      background: #2ecc71;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 5px;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12); }
+
+p {
+  color: #4a4a4a; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+.content div {
+  float: left;
+  padding: 10px; }
+
+.grid-container {
+  padding: 10px;
+  margin: auto; }
+  .grid-container > [class="grid-"] {
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+    margin-left: 2%; }
+  .grid-container > [class="grid-"]:first-child {
+    margin-left: 0; }
+  .grid-container > [class="grid-"]:last-child {
+    float: right; }
+
+.grid-1 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 6.5%;
+  /*width/context(65/1000)*/ }
+
+.grid-2 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 15%;
+  /*width/context(65/1000)*/ }
+
+.grid-3 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 23.5%;
+  /*width/context(65/1000)*/ }
+
+.grid-4 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 32%;
+  /*width/context(65/1000)*/ }
+
+.grid-5 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 40.5%;
+  /*width/context(65/1000)*/ }
+
+.grid-6 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 49%;
+  /*width/context(65/1000)*/ }
+
+.grid-7 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 57.5%;
+  /*width/context(65/1000)*/ }
+
+.grid-8 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 66%;
+  /*width/context(65/1000)*/ }
+
+.grid-9 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 74.5%;
+  /*width/context(65/1000)*/ }
+
+.grid-10 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 83%;
+  /*width/context(65/1000)*/ }
+
+.grid-11 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 91.5%;
+  /*width/context(65/1000)*/ }
+
+.grid-12 {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: 100%;
+  /*width/context(65/1000)*/ }
+
+.group:after,
+.grid-container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*# sourceMappingURL=main.css.map */

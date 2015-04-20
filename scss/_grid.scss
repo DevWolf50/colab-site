@@ -1,0 +1,72 @@
+@mixin gridSize($numberOfCollumns,$numberOfGutters) {
+  /* collumns are 65px wide, with 20px gutters*/
+  width: percentage((($numberOfCollumns*65)+($numberOfGutters *20))/1000);/*width/context(65/1000)*/
+}
+
+
+.grid-container {
+  padding: 10px;
+  margin: auto;
+
+  > [class="grid-"] {
+    float: left;
+    min-height: 1px;
+    padding:10px;
+    margin-left: 2%;
+  }
+
+  > [class="grid-"]:first-child {
+    margin-left:0;
+  }
+  > [class="grid-"]:last-child {
+    float: right;
+  }
+}
+
+
+.grid-1 {
+@include gridSize(1,0);
+}
+
+.grid-2 {
+  @include gridSize(2,1);
+}
+
+.grid-3 {
+  @include gridSize(3,2);
+}
+.grid-4 {
+  @include gridSize(4,3);
+}
+.grid-5 {
+  @include gridSize(5,4);
+}
+.grid-6 {
+  @include gridSize(6,5);
+}
+.grid-7 {
+  @include gridSize(7,6);
+}
+.grid-8 {
+  @include gridSize(8,7);
+}
+.grid-9 {
+  @include gridSize(9,8);
+}
+.grid-10 {
+  @include gridSize(10,9);
+}
+.grid-11 {
+  @include gridSize(11,10);
+}
+.grid-12 {
+  @include gridSize(12,11);
+}
+
+.group:after,
+.grid-container:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
